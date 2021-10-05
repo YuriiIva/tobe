@@ -63,7 +63,9 @@
       <section class="hero-section section">
         <div class="hero-container container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="submit" class="hero-button">Заказать услугу</button>
+          <button type="submit" data-modal-open class="hero-button">
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -138,6 +140,7 @@
                 alt="Работа на планшете"
                 width="370"
               />
+              <p class="work-text">Десктопные приложения</p>
             </li>
             <li class="work-item">
               <img
@@ -145,6 +148,7 @@
                 alt="Синзронизация телефона с ноутбуком"
                 width="370"
               />
+              <p class="work-text">Мобильные приложения</p>
             </li>
             <li class="work-item">
               <img
@@ -152,6 +156,7 @@
                 alt="Цветовая настройка планшета"
                 width="370"
               />
+              <p class="work-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -446,5 +451,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="submit" data-modal-close class="btn-close">
+          <svg class="btn-close-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-Vector-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
