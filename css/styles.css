@@ -10,6 +10,8 @@
   --icon-color: #afb1b8;
   --bgr-section: #1a1818;
   --btn-focus: rgb(165, 129, 13);
+  --input-nottext: #2196f3;
+  --input-text: #ffa000;
 }
 
 /* Сбросы */
@@ -266,6 +268,18 @@ justify-content: space-between;
 .ibc-title4{
   margin-bottom: 20px;
 }
+/* .ibc-title4::before{
+  position: absolute;
+  border-style: solid;
+  border-width: 0 0.3em 0.25em 0;
+  transform: rotate(45deg);
+  content: "-";
+  color: rgb(167, 22, 22);
+  font-size: 30px;
+  width: 10px;
+  
+} */
+
 .ibc-item{
   margin-bottom: 180px;
 }
@@ -348,6 +362,13 @@ justify-content: space-between;
   height: 25px;
   width: 220px;
 
+}
+.input:placeholder-shown {
+  border-color: var(--input-text);
+}
+
+.input:not(:placeholder-shown) {
+  border-color: var(--input-nottext);
 }
 .label{
   text-align: left;
